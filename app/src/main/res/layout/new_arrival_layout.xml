@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+
+    <include layout="@layout/app_bar_main"/>
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bg"
+        android:textSize="44dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTim"
+        />
+    <TextView
+        android:id="@+id/tv_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivals_bg"
+        android:textSize="44dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        />
+    <GridView
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+</LinearLayout>
